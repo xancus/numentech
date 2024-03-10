@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "./node_modules/standard/eslintrc.json"
+  ],
+  "rules": {
+    "react/prop-types": 0,
+    "react/react-in-jsx-scope": 0,
+    "camelcase": 0,
+    "quotes": ["error", "single"]
+  }
+}

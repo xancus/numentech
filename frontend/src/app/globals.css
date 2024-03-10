@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #1E1E1E;
+  --color-secondary: #ddd;
+  --background-color: var(--color-secondary);
+  --cards-background-color: linear-gradient(32.6deg,#38369a2c 28.69%,rgba(255,255,253,.2) 100%);
+
+  --color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #ddd;
+		--color-secondary: #1E1E1E;
+
+		--background-color: var(--color-secondary);
+  }
+}
+
+html {
+  font-family: system-ui, sans-serif;
+  background: var(--background-color);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+  border: 0px solid black;
+  border-radius: 0 12px 12px 0px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: var(--background-color)!important;
+  border-radius: 10px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
