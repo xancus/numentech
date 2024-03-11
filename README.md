@@ -3,7 +3,7 @@
 ## Start app:
 ### Backend
 - Open a new terminal and go to backend folder: `cd backend`
-- I added the virtual environment, so just make sure all the requirements are properly installed.
+- Create a virtual environment and run `pip install -r requirements.txt` python version is 3.9.7
 - Activate virtual env with source venv/Scripts/activate and run wsgi.py. Your backend will be running on [http://127.0.0.1:3000](http://127.0.0.1:3000)
 
 ## Frontend
